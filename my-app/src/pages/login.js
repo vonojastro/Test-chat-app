@@ -13,7 +13,7 @@ const Login = () => {
     } else {
       router.push('/login')
     }
-  })
+  }, [currentUser])
 
   const handleLogin = async () => {
     try {
