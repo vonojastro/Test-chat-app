@@ -26,3 +26,21 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+
+## Running the App
+
+To run the Next.js app, follow these steps:
+
+1. Install the dependencies by running the following command in your project directory:
+   "npm install"
+
+2. Start the development server by running the following command:
+
+  "npm run dev"
+  
+3. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the app.
+
+That's it! You have successfully set up the Firebase configuration and can now run the Next.js app by executing `npm run dev`. 
+
+
