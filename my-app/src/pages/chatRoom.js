@@ -17,7 +17,7 @@ const ChatRoom = () => {
     if (currentUser) {
       router.push('/chatRoom')
     } else {
-      router.push('/login')
+      router.push('/')
     }
   })
 
@@ -71,7 +71,7 @@ const ChatRoom = () => {
           <div className='h-[80%] bg-white my-2 rounded-lg flex flex-col-reverse p-5 overflow-x-scroll'>
 
             {messages.map((message) => (
-              <div key={message.id} className={`flex flex-col gap-2  py-4 ${message.uid === currentUser.uid ? "items-end" : "items-start"}  w-full`}>
+              <div key={message.id} className={`flex flex-col gap-2  py-4 ${message.uid && message.uid === currentUser?.uid ? "items-end" : "items-start"}  w-full`}>
                 <div className='flex gap-2 items-center '>
                   <img src={message.avatar} className='bg-gray-400 w-7 h-7 rounded-full' />
                   <p className='text-sm text-gray-500 capitalize'> {message.name}</p>
