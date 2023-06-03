@@ -68,7 +68,7 @@ const ChatRoom = () => {
       <div className=" flex justify-center items-center h-[95vh]">
         <div className="bg-blue-400 max-w-6xl w-full mx-auto h-[70vh] p-5 rounded-lg">
           {/* Messages */}
-          <div className='h-[80%] bg-white my-2 rounded-lg flex flex-col-reverse p-5 overflow-x-scroll'>
+          <div className='h-[80%] bg-white my-2 rounded-lg flex flex-col p-5 overflow-x-scroll'>
 
             {messages.map((message) => (
               <div key={message.id} className={`flex flex-col gap-2  py-4 ${message.uid && message.uid === currentUser?.uid ? "items-end" : "items-start"}  w-full`}>
